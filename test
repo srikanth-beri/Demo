@@ -1,0 +1,34 @@
+<mvc:View
+    controllerName="project1up1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+	xmlns:ui="sap.ui.unified"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+
+					<VBox >
+
+				    <HBox>
+
+				    <Text text="Path:" class="sapUiSmallMargin" textAlign="Begin"/>
+
+					<ui:FileUploader id="fileUploaderFS" multiple="false" width="150%" class="sapUiSmallMargin" change="onFileChange"/>
+
+					</HBox>
+
+
+ 					<Button id="but1" text="Upload" type="Accept" press="onUploadFile" width="15%" class="sapUiMediumMargin"/>
+					 
+
+				</VBox>
+
+					<content />
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
